@@ -2,21 +2,23 @@
   "name": "arc-stripe-hybrid-playbook",
   "version": "1.0.0",
   "description": "Stripe + Arc Hybrid Settlement Playbook",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "smart-contracts"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install:all": "npm install",
+    "backend:start": "npm run start --workspace=backend",
+    "contracts:compile": "npm run compile --workspace=smart-contracts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "ethers": "^6.13.5",
-    "express": "^4.21.2",
-    "stripe": "^17.6.0"
-  },
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.18"
-  }
+  "keywords": [
+    "arc-network",
+    "stripe",
+    "hybrid-settlement",
+    "usdc",
+    "payouts"
+  ],
+  "author": "Glencorse033",
+  "license": "MIT"
 }
