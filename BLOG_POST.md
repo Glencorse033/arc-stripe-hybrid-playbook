@@ -22,4 +22,4 @@ Our playbook introduces a two-tier architecture:
 ## Why Circle?
 This architecture isn't just a toy—it's the bridge that allows traditional enterprises to adopt Web3 values (Speed, Transparency, Low Cost) without abandoning the systems they rely on today. At Circle, "bringing the dollar onto the internet" is the mission. This playbook shows developers exactly how to do it.
 
-[Check out the Code on GitHub]
+[Check out the Code on GitHub](https://github.com/Glencorse033/arc-stripe-hybrid-playbook)
