@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc + Stripe Hybrid Playbook | Preview</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container hero">
+            <h1>Hybrid Settlement Playbook</h1>
+            <p>Unlocking instant, low-cost B2B payouts using Stripe + Arc Network</p>
+            <img src="hero.png" alt="Hybrid Settlement Concept" class="hero-image">
+            <div class="tags">
+                <span class="tag">Stripe Inbound</span>
+                <span class="tag">Arc Outbound</span>
+                <span class="tag">USDC Native</span>
+                <span class="tag">99% Cost Savings</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="economics">
+        <div class="container">
+            <h2>The Economic Shift</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Payout Speed</h3>
+                    <span class="metric">⚡ Instant</span>
+                    <p>ARC settles in < 1 second. Traditional rails take 2-7 days. Liquidity is unlocked instantly.</p>
+                </div>
+                <div class="card">
+                    <h3>Domestic Fee</h3>
+                    <span class="metric">$0.01</span>
+                    <p>USDC gas fees on ARC are stable and predictable, compared to $0.25+ for standard ACH payouts.</p>
+                </div>
+                <div class="card">
+                    <h3>Cross-Border</h3>
+                    <span class="metric">99.9%</span>
+                    <p>Save up to $49.99 per international wire by settling over the ARC Network in USDC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture">
+        <div class="container">
+            <h2>Technical Architecture</h2>
+            <div class="card" style="max-width: 900px; margin: 0 auto; text-align: left;">
+                <p>The system leverages <strong>Stripe</strong> for familiar customer-facing payment flows (Cards/ACH) and <strong>Arc Network</strong> for programmatic, efficient distribution.</p>
+                <ul style="margin-left: 1.5rem; margin-top: 1rem; color: var(--text-secondary);">
+                    <li><strong>Backend:</strong> Node.js with ethers.js and Stripe SDK.</li>
+                    <li><strong>Smart Contracts:</strong> Solidity 0.8.20 with Batch Payout optimization.</li>
+                    <li><strong>Identity:</strong> Every Stripe Payer is mapped to an Arc transaction for full auditability.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer container">
+        <p>Built for the Arc Network ecosystem by Glencorse033</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">© 2026 Hybrid Settlement Playbook</p>
+    </div>
+</body>
+</html>
