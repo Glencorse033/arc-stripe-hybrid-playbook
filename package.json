@@ -1,23 +1,28 @@
 {
-  "name": "arc-stripe-hybrid-playbook",
+  "name": "stripe-circle-hybrid-playbook",
   "version": "1.0.0",
-  "description": "Stripe + Arc Hybrid Settlement Playbook",
+  "description": "Production integration patterns for Stripe (inbound) + Circle/Arc (outbound) payments.",
   "private": true,
-  "workspaces": [
-    "backend",
-    "smart-contracts"
-  ],
   "scripts": {
-    "install:all": "npm install",
-    "backend:start": "npm run start --workspace=backend",
-    "contracts:compile": "npm run compile --workspace=smart-contracts"
+    "start": "node integration-patterns/stripe-webhook-handler.js",
+    "reconcile": "node accounting-reconciliation/discrepancy-detector.js",
+    "export": "node accounting-reconciliation/quickbooks-exporter.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "stripe": "^14.0.0"
   },
   "keywords": [
     "arc-network",
+    "circle",
     "stripe",
     "hybrid-settlement",
     "usdc",
-    "payouts"
+    "payouts",
+    "reconciliation",
+    "operational-playbook"
   ],
   "author": "Glencorse033",
   "license": "MIT"
